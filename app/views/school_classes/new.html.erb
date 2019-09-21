@@ -1,8 +1,8 @@
 <h3>School Class Form</h3>
 
-<%= form_tag school_classes_path %>
-  <%= label_tag(:first_name, "First name") %>
-  <%= text_field_tag(:first_name) %>
+<%= form_for(@school_class) do |f| %>
+  <label>Title:</label>
+  <%= f.text_field :title %>
 
   <%= label_tag(:last_name, "Last name") %>
   <%= text_field_tag(:last_name) %>
