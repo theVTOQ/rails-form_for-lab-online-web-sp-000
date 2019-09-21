@@ -3,20 +3,20 @@ class SchoolClassesController < ApplicationController
   end
 
   def edit
-    @school_class = Student.find(params[:id])
+    @school_class = SchoolClass.find(params[:id])
   end
 
   def new
-    @school_class = Student.new
+    @school_class = SchoolClass.new
   end
 
   def create
-    @school_class = Student.create(post_params(:title, :room_number))
+    @school_class = SchoolClass.create(post_params(:title, :room_number))
     redirect_to student_path(@school_class)
   end
 
   def update
-    @school_class = Student.find(params[:id])
+    @school_class = SchoolClass.find(params[:id])
     @school_class.update(post_params(:title, :room_number))
 
     redirect_to school_class_path(@school_class)
