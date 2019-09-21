@@ -1,4 +1,4 @@
-class StudentsController < ApplicationController
+class SchoolClassesController < ApplicationController
   def show
   end
 
