@@ -1,4 +1,4 @@
-<h3>Student Form</h3>
+<h3>Student Edit Form</h3>
 
 <%= form_for(@student) do |f| %>
   <label>First Name:</label><br>
@@ -7,5 +7,5 @@
   <label>Last Name:</label><br>
   <%= f.text_field :last_name %>
 
-  <%= submit_tag "Create Student" %>
+  <%= submit_tag "Update Student" %>
 <% end %>
