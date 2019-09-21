@@ -1,5 +1,6 @@
 class SchoolClassesController < ApplicationController
   def show
+    @school_class = SchoolClass.find(params[:id])
   end
 
   def edit
@@ -26,4 +27,3 @@ class SchoolClassesController < ApplicationController
     params.require(:school_class).permit(*args)
   end
 end
-  
