@@ -2,7 +2,7 @@
 
 <%= form_for(@student) do |f| %>
   <label for="first_name">First name</label>
-  <%= text_field_tag(:first_name) %>
+  <%= f.text_field :first_name %>
 
   <label for="last_name">Last name</label>
   <%= text_field_tag(:last_name) %>
