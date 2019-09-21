@@ -11,13 +11,13 @@ class SchoolClassesController < ApplicationController
   end
 
   def create
-    @school_class = Student.create(post_params(:first_name, :last_name))
+    @school_class = Student.create(post_params(:title, :room_number))
     redirect_to student_path(@school_class)
   end
 
   def update
     @school_class = Student.find(params[:id])
-    @school_class.update(post_params(:first_name, :last_name))
+    @school_class.update(post_params(:title, :room_number))
 
     redirect_to school_class_path(@school_class)
   end
