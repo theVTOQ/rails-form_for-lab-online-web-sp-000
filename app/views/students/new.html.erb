@@ -1,10 +1,10 @@
 <h3>Student Form</h3>
 
 <%= form_for(@student) do |f| %>
-  <label for="first_name">First name</label>
+  <label>First name</label>
   <%= f.text_field :first_name %>
 
-  <label for="last_name">Last name</label>
+  <label>Last name</label>
   <%= f.text_field :last_name %>
 
   <%= submit_tag "Create Student" %>
